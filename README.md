@@ -11,6 +11,7 @@ git add .                   # Añadir todos los ficheros del directorio. SI AÑA
 
 ## Qué guarda GIT?
 Git solo guarda ficheros.  NO GUARDA DIRECTORIOS
+Git guarda los ficheros con una ruta, y si existe lo mete ahí. Sino lo crea.
 
 # Objetos en git:
     ## WORKSPACE:
@@ -32,13 +33,18 @@ git rm --cached <Nombre_fichero>
 ## Borra el fichero de dónde?
  - Del workspace
  - En el staging se le dice que en el próximo paquete de cambios, se elimine el fichero.
- - 
- 
+ - rm
+
 ## como trabaja git?
  - Los commits (paquetes de cambio) se aplican de forma incremental.
  - Cuando hacemos un cambio dentro de un fichero se guardan los ficheros, se guardan los cambios que ha sufrido ese fichero. Cuando hay un nuevo commit, se añaden al ficheor que contiene las modificacioens de un fichero, lo que ha sufrido.
- - 
 
 ## Mandar los cambios que hay apuntados en el AREA DE STAGING al repo
 git commit -m 'mensaje'
 
+## Git commit y editarlo:
+git commit --amend
+
+## git status nos dice también
+Que hay ficheros que existen con cambios, que no están commiteados
+que puede haber ficheros que no se están trazeando. Para eso hacemos un git add* (añade al staging todo ficheros del directorio que estás)
