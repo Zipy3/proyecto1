@@ -1,0 +1,19 @@
+# comentarios con el hash
+# Líneas en blanco se ignoran
+tmp/peliculas_marvel.txt
+.DS_Store     # Todos los archivos que tengan eseee nombre, independentemente dónde estén se ignoraría.
+
+tmp/            # La carpeta tmp se ignoran. Aún así, se ignoran todas las carpetas tmp se ignoran estén dónde estén
+
+/tmp            # solo ignora la carpeta tmp del directorio raíz del directorio.
+
+tmp/*.txt       # ignora todos los ficheros txt que estén siguiendo ese patrón de nombre.txt se ignoran
+
+log??-??-????   # Todos los ficheros que tienen ese formato de números y tal, se ignoran
+
+/src/**/tmp     # dentro de la carpeta src se ignoran todas las carpetas tmp. Da igual que dónde estén dentro de src pero se ignoran.
+
+!/tmp/peliculas_marvel.txt      # Si este archivo es ignorado por cualquier regla, será anulada esta orden de ignore.
+
+
+
